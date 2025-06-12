@@ -36,7 +36,7 @@ def save_cached_mappings(cache):
         json.dump(cache, f, indent=2)
 
 EXPECTED_ROLES = [
-    "Students", "Contacts", "Schools", "Faculty", "Class",
+    "School_Year", "Contacts", "Schools", "Faculty", "Class",
     "Class_Teacher", "Class_Roster", "Student_Immunization", "Medical_Alerts"
 ]
 
@@ -46,6 +46,7 @@ class SHMValidationApp(ctk.CTk):
 
         self.title(F"SHM Data Validation Tool v{APP_VERSION}")
 
+        # TODO: Update app name and icon
         # 🔧 Set app icon
         ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(u"shm.validation.tool")
         icon_path = get_resource_path("shm_icon2.ico")
@@ -415,7 +416,7 @@ class SHMValidationApp(ctk.CTk):
 
         # ✅ Sort roles by dependency priority
         PRIORITY_ORDER = [
-            "students", "schools", "faculty", "contacts",
+            "school_year", "schools", "faculty", "contacts",
             "class", "class_teacher", "class_roster",
             "medical_alerts", "student_immunization"
         ]

@@ -31,7 +31,7 @@
   "unique_fields": [],
   "rules_enabled": {
     "required_fields": true,
-    "unique_fields": true,
+    "unique_fields": false,
     "state_reporting_start_check": true,
     "start_year_match_check": true,
     "last_day_check": true,

@@ -25,23 +25,32 @@ def load_file(path):
     return df
 
 def save_file(df, output_path):
-    # Save DataFrame to Excel first (unstyled)
+    # Format date fields to MM/DD/YYYY before saving
+    date_fields = [
+        "First Day of School",
+        "Last Day of School",
+        "State Reporting Start Date",
+        "State Reporting End Date"
+    ]
+    for col in date_fields:
+        if col in df.columns:
+            df[col] = pd.to_datetime(df[col], errors="coerce").dt.strftime("%m/%d/%Y")
+
+    # Save DataFrame to Excel (unstyled)
     df.to_excel(output_path, index=False)
 
-    # Load Excel file for styling
+    # Load Excel for styling
     wb = load_workbook(output_path)
     ws = wb.active
 
     yellow_fill = PatternFill(start_color="F8D12A", end_color="F8D12A", fill_type="solid")
 
-    # Get column headers and map to Excel column index (1-based)
+    # Map column names to Excel indexes
     headers = [cell.value for cell in ws[1]]
     col_name_to_index = {name: i + 1 for i, name in enumerate(headers)}
-
-    # Identify the Validation_Errors column index
     error_col_index = col_name_to_index.get("Validation_Errors")
 
-    for row_idx in range(2, ws.max_row + 1):  # skip header row
+    for row_idx in range(2, ws.max_row + 1):
         error_cell = ws.cell(row=row_idx, column=error_col_index)
         if not error_cell.value:
             continue
@@ -56,10 +65,11 @@ def save_file(df, output_path):
 
     wb.save(output_path)
 
-    # Return heatmap grid for consolidated output
+    # Return heatmap grid
     if "Validation_Errors" in df.columns:
         return generate_error_grid(df, grid_rows=10, grid_cols=8)
     return None
+
 
 def generate_error_grid(df, grid_rows=10, grid_cols=8):
     # Build a boolean mask of where errors occur by column
