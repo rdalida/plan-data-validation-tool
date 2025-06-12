@@ -31,6 +31,17 @@
   "unique_fields": [],
   "rules_enabled": {
     "required_fields": true,
-    "unique_fields": true
+    "unique_fields": true,
+    "state_reporting_start_check": true,
+    "start_year_match_check": true,
+    "last_day_check": true,
+    "end_year_match_check": true,
+    "first_day_match_check": true,
+    "last_day_year_match_check": true,
+    "school_year_format_check": true,
+    "date_format_check": true,
+    "school_year_difference_check": true,
+    "school_year_suffix_check": true,
+    "date_order_check": true
   }
 }

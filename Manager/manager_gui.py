@@ -25,32 +25,19 @@ ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("green")
 
 READABLE_RULE_LABELS = {
-    "required_fields": "Required Fields",
-    "unique_fields": "Unique Fields",
-    "acceptable_values_check": "Must match Acceptable Values",
-    "school_id_check": "School ID must exist in Schools file",
-    "source_id_class_check": "Source ID must exist in Class",
-    "student_id_check": "Student ID must exist in Students",
-    "class_roster_source_id_class_teacher_check": "Source ID must exist in Class Teacher",
-    "class_teacher_name_faculty_check": "Teacher Name must match a Faculty record",
-    "class_combo_id_check": "Combo must be unique (Source ID, Course ID, Course Description, Campus ID, Section, Period, Room)",
-    "contacts_bday_format_check": "Birth Date format MM/DD/YYYY",
-    "contacts_student_email_check": "Email Address should not match Students",
-    "contacts_comments_len_check": "Comments char limit < 1000",
-    "contacts_combo_id_check": "Combo ID (Student ID, Contact ID, Contact First & Last Name)",
-    "contacts_combo_id_integrity_check": "Rows with same Contact ID must be identical across key fields",
-    "vaccines_check": "Vaccines must match Acceptable Values",
-    "dose_date_check": "Dose date format MM/DD/YYYY",
-    "duplicate_records_check": "Student ID must be unique except for School ID, Membership Type, General Alert",
-    "alert_never_expires_check": "If Alert Never Expires is “No”, Alert Active must be present",
-    "alert_start_date_check": "Alert Start Date must be before Alert End Date",
-    "student_id_not_faculty_contact_check": "Student ID must not appear in Faculty ID or Contact ID",
-    "student_email_not_faculty_contact_check": "Student Email should not match Faculty or Contact emails",
-    "duplicate_med_id_check": "Medicaid ID must be unique",
-    "general_alert_no_html_check": "General Alert must not contain HTML markup",
-    "postal_code_format_check": "Postal Code must be 5 digits or ZIP+4 format",
-    "alert_id_prefix_check": "Alert ID should not start with 1 or 2",
-    "alert_type_text_check": "Alert Type and Alert Text should not match"
+    "required_fields": "Required fields based on config",
+    "unique_fields": "Unique fields based on config",
+    "state_reporting_start_check": "State Reporting Start Date must start with 07/01",
+    "start_year_match_check": "State Reporting Start Date year must match the starting year in School Year",
+    "last_day_check": "Last Day of School must start with 06/30",
+    "end_year_match_check": "State Reporting End Date year must match the ending year in School Year",
+    "first_day_match_check": "First Day of School year must match the starting year in School Year",
+    "last_day_year_match_check": "Last Day of School year must match the ending year in School Year",
+    "school_year_format_check": "School Year format must be 'YYYY-YYYY'",
+    "date_format_check": "Date fields format must be MM/DD/YYYY",
+    "school_year_difference_check": "School Year must span exactly 1 year",
+    "school_year_suffix_check": "Date pairs must be 1 year apart",
+    "date_order_check": "Start date must come before end date"
 }
 
 class ConfigManagerApp(ctk.CTk):
