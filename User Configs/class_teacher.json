@@ -1,0 +1,51 @@
+{
+  "column_mapping": {
+    "Source ID": {
+      "required": true,
+      "type": "text"
+    },
+    "Teacher Last Name": {
+      "required": true,
+      "type": "text"
+    },
+    "Teacher First Name": {
+      "required": true,
+      "type": "text"
+    },
+    "Teacher Middle Name": {
+      "required": false,
+      "type": "text"
+    },
+    "Teacher Type": {
+      "required": true,
+      "type": "text"
+    },
+    "Start Date": {
+      "required": true,
+      "type": "date"
+    },
+    "End Date": {
+      "required": true,
+      "type": "date"
+    },
+    "Faculty ID": {
+      "required": false,
+      "type": "text"
+    }
+  },
+  "required_fields": [
+    "Source ID",
+    "Teacher Last Name",
+    "Teacher First Name",
+    "Teacher Type",
+    "Start Date",
+    "End Date"
+  ],
+  "unique_fields": [],
+  "rules_enabled": {
+    "required_fields": true,
+    "unique_fields": false,
+    "source_id_class_check": true,
+    "class_teacher_name_faculty_check": true
+  }
+}

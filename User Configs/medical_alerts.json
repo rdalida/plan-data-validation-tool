@@ -1,0 +1,48 @@
+{
+  "column_mapping": {
+    "Student ID": {
+      "required": true,
+      "type": "text"
+    },
+    "Medical Problem Name": {
+      "required": false,
+      "type": "text"
+    },
+    "Alert Type": {
+      "required": true,
+      "type": "text"
+    },
+    "Alert Text": {
+      "required": true,
+      "type": "text"
+    },
+    "Start Date": {
+      "required": false,
+      "type": "date"
+    },
+    "Alert ID": {
+      "required": true,
+      "type": "text"
+    },
+    "Alert Comments": {
+      "required": false,
+      "type": "text"
+    }
+  },
+  "required_fields": [
+    "Student ID",
+    "Alert Type",
+    "Alert Text",
+    "Alert ID"
+  ],
+  "unique_fields": [
+    "Alert ID"
+  ],
+  "rules_enabled": {
+    "required_fields": true,
+    "student_id_check": true,
+    "unique_fields": true,
+    "alert_id_prefix_check": true,
+    "alert_type_text_check": true
+  }
+}

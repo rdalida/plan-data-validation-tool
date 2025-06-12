@@ -1,0 +1,23 @@
+{
+  "column_mapping": {
+    "School Name": {
+      "required": true,
+      "type": "text"
+    },
+    "School ID": {
+      "required": true,
+      "type": "text"
+    }
+  },
+  "required_fields": [
+    "School Name",
+    "School ID"
+  ],
+  "unique_fields": [
+    "School ID"
+  ],
+  "rules_enabled": {
+    "required_fields": true,
+    "unique_fields": true
+  }
+}

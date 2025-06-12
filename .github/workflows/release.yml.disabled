@@ -1,0 +1,39 @@
+name: Python Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code with full history and tags
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # ensures commit history is fully available
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install python-semantic-release
+
+      - name: Configure Git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch tags explicitly (redundant safety)
+        run: git fetch --tags --force
+
+      - name: Run semantic-release
+        run: semantic-release version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

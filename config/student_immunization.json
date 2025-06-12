@@ -1,0 +1,13 @@
+{
+    "column_mapping": {
+      "Student ID":     { "required": true,  "type": "text" },
+      "Vaccine":        { "required": true,  "type": "text" },
+      "Dose Date":      { "required": true,  "type": "date" }
+    },
+    "required_fields": [
+      "Student ID",
+      "Vaccine",
+      "Dose Date"
+    ]
+  }
+  

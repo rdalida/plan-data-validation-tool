@@ -1,0 +1,38 @@
+{
+    "column_mapping": {
+      "Faculty ID":            { "required": true,  "type": "text" },
+      "Faculty Last Name":     { "required": true,  "type": "text" },
+      "Faculty First Name":    { "required": true,  "type": "text" },
+      "Faculty Middle Name":   { "required": false, "type": "text" },
+      "Gender":                { "required": false, "type": "text" },
+      "Birth Date":            { "required": false, "type": "date" },
+      "Job Classification":    { "required": false, "type": "text" },
+      "NPI ID":                { "required": false, "type": "text" },
+      "Email Address":         { "required": true,  "type": "text" },
+      "School ID":             { "required": true,  "type": "text" },
+      "Phone Number":          { "required": false, "type": "text" },
+      "Address Line 1":        { "required": false, "type": "text" },
+      "Address Line 2":        { "required": false, "type": "text" },
+      "City":                  { "required": false, "type": "text" },
+      "County":                { "required": false, "type": "text" },
+      "State":                 { "required": false, "type": "text" },
+      "Country":               { "required": false, "type": "text" },
+      "Postal Code":           { "required": false, "type": "text" },
+      "Federation ID":         { "required": false, "type": "text" },
+      "Role":                  { "required": false, "type": "text" },
+      "Examiner":              { "required": false, "type": "text" },
+      "ActiveUser":            { "required": false, "type": "text" }
+    },
+    "required_fields": [
+      "Faculty ID",
+      "Faculty Last Name",
+      "Faculty First Name",
+      "Email Address",
+      "School ID"
+    ],
+    "unique_fields": [
+      "Faculty ID",
+      "Email Address"
+    ]
+  }
+  

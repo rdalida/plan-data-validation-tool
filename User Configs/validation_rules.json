@@ -1,0 +1,26 @@
+{
+    "required_fields": ["Student ID", "First Name", "Last Name", "Email"],
+    "unique_fields": ["Student ID", "Email"],
+    "field_rules": {
+      "Email": {
+        "regex": "^\\S+@\\S+\\.\\S+$",
+        "error": "Invalid email format"
+      }
+    },
+    "cross_file_rules": [
+      {
+        "field": "Student ID",
+        "must_not_exist_in": [
+          {"file": "faculty", "field": "Faculty ID"},
+          {"file": "contacts", "field": "Contact ID"}
+        ]
+      },
+      {
+        "field": "Email",
+        "must_not_exist_in": [
+          {"file": "contacts", "field": "Email"}
+        ]
+      }
+    ]
+  }
+  

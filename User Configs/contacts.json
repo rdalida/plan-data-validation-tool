@@ -1,0 +1,170 @@
+{
+  "column_mapping": {
+    "Student ID": {
+      "required": true,
+      "type": "text"
+    },
+    "Contact ID": {
+      "required": false,
+      "type": "text"
+    },
+    "Contact Last Name": {
+      "required": true,
+      "type": "text"
+    },
+    "Contact First Name": {
+      "required": true,
+      "type": "text"
+    },
+    "Contact Middle Name": {
+      "required": false,
+      "type": "text"
+    },
+    "Suffix": {
+      "required": false,
+      "type": "text"
+    },
+    "Gender": {
+      "required": false,
+      "type": "text"
+    },
+    "Email Address": {
+      "required": true,
+      "type": "text"
+    },
+    "Phone Type 1": {
+      "required": false,
+      "type": "text"
+    },
+    "Phone Number 1": {
+      "required": true,
+      "type": "text"
+    },
+    "Extension 1": {
+      "required": false,
+      "type": "text"
+    },
+    "Relationship": {
+      "required": true,
+      "type": "text"
+    },
+    "Contact Sequence": {
+      "required": false,
+      "type": "text"
+    },
+    "Parent or Legal Guardian": {
+      "required": false,
+      "type": "text"
+    },
+    "Pickup Rights": {
+      "required": false,
+      "type": "text"
+    },
+    "Resides With": {
+      "required": false,
+      "type": "text"
+    },
+    "Access to Records": {
+      "required": false,
+      "type": "text"
+    },
+    "Emergency Contact": {
+      "required": false,
+      "type": "text"
+    },
+    "Legal Custody": {
+      "required": false,
+      "type": "text"
+    },
+    "Primary Care Provider": {
+      "required": false,
+      "type": "text"
+    },
+    "Disciplinary Contact": {
+      "required": false,
+      "type": "text"
+    },
+    "Comments": {
+      "required": false,
+      "type": "text"
+    },
+    "Address Type": {
+      "required": false,
+      "type": "text"
+    },
+    "Address Line 1": {
+      "required": false,
+      "type": "text"
+    },
+    "Address Line 2": {
+      "required": false,
+      "type": "text"
+    },
+    "Address City": {
+      "required": false,
+      "type": "text"
+    },
+    "Address County": {
+      "required": false,
+      "type": "text"
+    },
+    "Address State Province": {
+      "required": false,
+      "type": "text"
+    },
+    "Address Country": {
+      "required": false,
+      "type": "text"
+    },
+    "Address Postal Code": {
+      "required": false,
+      "type": "text"
+    },
+    "Phone Type 2": {
+      "required": false,
+      "type": "text"
+    },
+    "Phone Number 2": {
+      "required": false,
+      "type": "text"
+    },
+    "Extension 2": {
+      "required": false,
+      "type": "text"
+    },
+    "Phone Number 3": {
+      "required": false,
+      "type": "text"
+    },
+    "Extension 3": {
+      "required": false,
+      "type": "text"
+    },
+    "Birth Date": {
+      "required": false,
+      "type": "date"
+    }
+  },
+  "required_fields": [
+    "Student ID",
+    "Contact Last Name",
+    "Contact First Name",
+    "Email Address",
+    "Phone Number 1",
+    "Relationship"
+  ],
+  "unique_fields": [
+    "Email Address"
+  ],
+  "rules_enabled": {
+    "required_fields": true,
+    "unique_fields": true,
+    "acceptable_values_check": true,
+    "student_id_check": true,
+    "contacts_bday_format_check": true,
+    "contacts_student_email_check": true,
+    "contacts_comments_len_check": true,
+    "contacts_combo_id_check": true,
+    "contacts_combo_id_integrity_check": true
+  }
+}

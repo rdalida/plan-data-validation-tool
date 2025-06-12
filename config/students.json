@@ -1,0 +1,51 @@
+{
+    "column_mapping": {
+      "Student ID":         { "required": true,  "type": "text" },
+      "Student Medicaid ID":{ "required": false, "type": "text" },
+      "Student Last Name":  { "required": true,  "type": "text" },
+      "Student First Name": { "required": true,  "type": "text" },
+      "Student Middle Name":{ "required": false, "type": "text" },
+      "Student Suffix":     { "required": false, "type": "text" },
+      "Student Gender":     { "required": true,  "type": "text" },
+      "Student Birth Date": { "required": true,  "type": "date" },
+      "English Learner":    { "required": false, "type": "text" },
+      "Living Arrangement": { "required": false, "type": "text" },
+      "Student Blood Type": { "required": false, "type": "text" },
+      "Student Race":       { "required": false, "type": "text" },
+      "Student Ethnicity":  { "required": false, "type": "text" },
+      "Homeroom Teacher":   { "required": false, "type": "text" },
+      "Address Line 1":     { "required": false, "type": "text" },
+      "Address Line 2":     { "required": false, "type": "text" },
+      "City":               { "required": false, "type": "text" },
+      "State":              { "required": false, "type": "text" },
+      "Postal Code":        { "required": false, "type": "text" },
+      "Phone Number":       { "required": false, "type": "text" },
+      "Extension":          { "required": false, "type": "text" },
+      "School ID":          { "required": true,  "type": "text" },
+      "Membership Type":    { "required": false, "type": "text" },
+      "Grade Level":        { "required": true,  "type": "text" },
+      "Home Room":          { "required": false, "type": "text" },
+      "Preferred Name":     { "required": false, "type": "text" },
+      "Email Address":      { "required": false, "type": "text" },
+      "General Alert":      { "required": false, "type": "text" },
+      "Alert Start Date":   { "required": false, "type": "date" },
+      "Alert End Date":     { "required": false, "type": "date" },
+      "Alert Active":       { "required": false, "type": "text" },
+      "Alert Never Expires":{ "required": false, "type": "text" },
+      "Plans Or Programs":  { "required": false, "type": "text" },
+      "Gender Identity":    { "required": false, "type": "text" }
+    },
+    "required_fields": [
+      "Student ID",
+      "Student Last Name",
+      "Student First Name",
+      "Student Gender",
+      "Student Birth Date",
+      "School ID",
+      "Grade Level"
+    ],
+    "unique_fields": [
+      "Student ID"
+    ]
+  }
+  

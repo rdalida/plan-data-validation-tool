@@ -1,0 +1,34 @@
+{
+  "column_mapping": {
+    "Source ID": {
+      "required": true,
+      "type": "text"
+    },
+    "Student ID": {
+      "required": true,
+      "type": "text"
+    },
+    "Start Date": {
+      "required": true,
+      "type": "date"
+    },
+    "End Date": {
+      "required": true,
+      "type": "date"
+    }
+  },
+  "required_fields": [
+    "Source ID",
+    "Student ID",
+    "Start Date",
+    "End Date"
+  ],
+  "unique_fields": [],
+  "rules_enabled": {
+    "required_fields": true,
+    "unique_fields": false,
+    "source_id_class_check": true,
+    "student_id_check": true,
+    "class_roster_source_id_class_teacher_check": true
+  }
+}

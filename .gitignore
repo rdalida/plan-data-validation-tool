@@ -1,0 +1,15 @@
+# Ignore virtual environment
+.venv/
+
+# Ignore build artifacts
+build/
+dist/
+__pycache__/
+*.spec
+
+# Ignore output files
+output/
+*.xlsx
+
+# Ignore settings
+.vscode/

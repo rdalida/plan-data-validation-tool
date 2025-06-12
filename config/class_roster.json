@@ -1,0 +1,16 @@
+{
+    "column_mapping": {
+      "Source ID":  { "required": true, "type": "text" },
+      "Student ID": { "required": true, "type": "text" },
+      "Start Date": { "required": true, "type": "date" },
+      "End Date":   { "required": true, "type": "date" }
+    },
+    "required_fields": [
+      "Source ID",
+      "Student ID",
+      "Start Date",
+      "End Date"
+    ],
+    "unique_fields": []
+  }
+  

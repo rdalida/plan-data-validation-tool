@@ -1,0 +1,7 @@
+[semantic_release]
+version_variable = "src/version.py:APP_VERSION"
+branch = "main"
+changelog_file = "CHANGELOG.md"
+upload_to_pypi = false
+upload_to_release = true
+post_version_command = "echo POST VERSION SCRIPT CALLED"
