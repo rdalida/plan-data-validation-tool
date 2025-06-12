@@ -1,36 +1,38 @@
 {
   "column_mapping": {
-    "School Year": {
+    "Local Student ID": {
       "required": true,
       "type": "text"
     },
-    "First Day of School": {
+    "Start Date of Plan": {
       "required": true,
       "type": "date"
     },
-    "Last Day of School": {
+    "End Date of Plan": {
       "required": true,
       "type": "date"
     },
-    "State Reporting Start Date": {
+    "Next Plan Due Date": {
       "required": true,
       "type": "date"
     },
-    "State Reporting End Date": {
+    "Date of Last Evaluation": {
       "required": true,
       "type": "date"
     }
   },
   "required_fields": [
-    "School Year",
-    "First Day of School",
-    "Last Day of School",
-    "State Reporting Start Date",
-    "State Reporting End Date"
+    "Local Student ID",
+    "Start Date of Plan",
+    "End Date of Plan",
+    "Next Plan Due Date",
+    "Date of Last Evaluation"
   ],
   "unique_fields": [],
   "rules_enabled": {
     "required_fields": true,
-    "unique_fields": true
+    "unique_fields": true,
+    "school_id_check": true,
+    "acceptable_values_check": true
   }
 }

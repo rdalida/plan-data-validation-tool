@@ -1,54 +1,50 @@
 {
   "column_mapping": {
-    "Faculty ID": {
+    "Local Student ID": {
       "required": true,
       "type": "text"
     },
-    "Faculty Last Name": {
+    "Student State ID": {
+      "required": false,
+      "type": "text"
+    },
+    "Student FIrst Name": {
       "required": true,
       "type": "text"
     },
-    "Faculty First Name": {
+    "Student Last Name": {
       "required": true,
       "type": "text"
     },
-    "Faculty Middle Name": {
+    "Student Middle Name": {
       "required": false,
       "type": "text"
     },
-    "Gender": {
+    "Suffix": {
       "required": false,
       "type": "text"
     },
-    "Birth Date": {
-      "required": false,
+    "Birthdate": {
+      "required": true,
+      "type": "text"
+    },
+    "Sex": {
+      "required": true,
       "type": "date"
-    },
-    "Job Classification": {
-      "required": false,
-      "type": "text"
-    },
-    "NPI ID": {
-      "required": false,
-      "type": "text"
-    },
-    "Email Address": {
-      "required": true,
-      "type": "text"
     },
     "School ID": {
       "required": true,
       "type": "text"
     },
-    "Phone Number": {
+    "Grade": {
+      "required": true,
+      "type": "text"
+    },
+    "Address": {
       "required": false,
       "type": "text"
     },
-    "Address Line 1": {
-      "required": false,
-      "type": "text"
-    },
-    "Address Line 2": {
+    "Address 2": {
       "required": false,
       "type": "text"
     },
@@ -56,54 +52,65 @@
       "required": false,
       "type": "text"
     },
-    "County": {
+    "Zip": {
       "required": false,
       "type": "text"
     },
-    "State": {
+    "Status": {
+      "required": true,
+      "type": "text"
+    },
+    "Race": {
       "required": false,
       "type": "text"
     },
-    "Country": {
+    "Student Language": {
       "required": false,
       "type": "text"
     },
-    "Postal Code": {
+    "Home Language": {
       "required": false,
       "type": "text"
     },
-    "Federation ID": {
+    "EB/EL Status": {
       "required": false,
       "type": "text"
     },
-    "Role": {
+    "Ethnicity": {
       "required": false,
       "type": "text"
     },
-    "Examiner": {
+    "At Risk Indicator": {
       "required": false,
       "type": "text"
     },
-    "ActiveUser": {
+    "Dyslexia Status": {
       "required": false,
       "type": "text"
     }
   },
   "required_fields": [
-    "Faculty ID",
-    "Faculty Last Name",
-    "Faculty First Name",
-    "Email Address",
-    "School ID"
+    "Local Student ID",
+    "Student FIrst Name",
+    "Student Last Name",
+    "Birthdate",
+    "Sex",
+    "School ID",
+    "Grade",
+    "Status"
   ],
-  "unique_fields": [
-    "Faculty ID",
-    "Email Address"
-  ],
+  "unique_fields": [],
   "rules_enabled": {
     "required_fields": true,
-    "unique_fields": true,
+    "acceptable_values_check": true,
+    "duplicate_records_check": true,
+    "alert_never_expires_check": true,
+    "alert_start_date_check": true,
+    "student_id_not_faculty_contact_check": true,
     "school_id_check": true,
-    "acceptable_values_check": true
+    "student_email_not_faculty_contact_check": true,
+    "duplicate_med_id_check": true,
+    "general_alert_no_html_check": true,
+    "postal_code_format_check": true
   }
 }

@@ -1,0 +1,79 @@
+{
+  "column_mapping": {
+    "School ID": {
+      "required": true,
+      "type": "text"
+    },
+    "School Minutes": {
+      "required": true,
+      "type": "int"
+    },
+    "Grade PK": {
+      "required": false,
+      "type": "int"
+    },
+    "Grade K": {
+      "required": false,
+      "type": "int"
+    },
+    "Grade 1": {
+      "required": false,
+      "type": "int"
+    },
+    "Grade 2": {
+      "required": false,
+      "type": "int"
+    },
+    "Grade 3": {
+      "required": false,
+      "type": "int"
+    },
+    "Grade 4": {
+      "required": false,
+      "type": "int"
+    },
+    "Grade 5": {
+      "required": false,
+      "type": "int"
+    },
+    "Grade 6": {
+      "required": false,
+      "type": "int"
+    },
+    "Grade 7": {
+      "required": false,
+      "type": "int"
+    },
+    "Grade 8": {
+      "required": false,
+      "type": "int"
+    },
+    "Grade 9": {
+      "required": false,
+      "type": "int"
+    },
+    "Grade 10": {
+      "required": false,
+      "type": "int"
+    },
+    "Grade 11": {
+      "required": false,
+      "type": "int"
+    },
+    "Grade 12": {
+      "required": false,
+      "type": "int"
+    }
+  },
+  "required_fields": [
+    "School ID",
+    "School Minutes"
+  ],
+  "unique_fields": [],
+  "rules_enabled": {
+    "required_fields": true,
+    "unique_fields": true,
+    "school_id_check": true,
+    "class_combo_id_check": true
+  }
+}

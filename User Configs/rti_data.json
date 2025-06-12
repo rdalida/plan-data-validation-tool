@@ -1,0 +1,36 @@
+{
+  "column_mapping": {
+    "Local Student ID": {
+      "required": true,
+      "type": "text"
+    },
+    "Dyslexia Risk Codes": {
+      "required": false,
+      "type": "text"
+    },
+    "Dyslexia Risk Code Date": {
+      "required": false,
+      "type": "date"
+    },
+    "Dyslexia Screening Exception Reason": {
+      "required": false,
+      "type": "text"
+    },
+    "Early Reading Indicator": {
+      "required": false,
+      "type": "text"
+    },
+    "Early Reading Indicator Date": {
+      "required": false,
+      "type": "date"
+    }
+  },
+  "required_fields": [
+    "Local Student ID"
+  ],
+  "unique_fields": [],
+  "rules_enabled": {
+    "required_fields": true,
+    "unique_fields": true
+  }
+}

@@ -224,7 +224,7 @@ class ConfigManagerApp(ctk.CTk):
         req_frame, req_checkbox = create_centered_checkbox(self.fields_frame, required)
         req_frame.grid(row=row, column=1, padx=5, pady=2, sticky="nsew")
 
-        type_menu = ctk.CTkOptionMenu(self.fields_frame, values=["text", "int", "float", "bool"])
+        type_menu = ctk.CTkOptionMenu(self.fields_frame, values=["text", "int", "float", "bool", "date"])
         type_menu.set(field_type)
         type_menu.grid(row=row, column=2, padx=5)
 

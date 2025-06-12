@@ -1,0 +1,58 @@
+{
+  "column_mapping": {
+    "School Year": {
+      "required": true,
+      "type": "text"
+    },
+    "Program Type": {
+      "required": true,
+      "type": "text"
+    },
+    "Grading Period Type": {
+      "required": true,
+      "type": "text"
+    },
+    "Order": {
+      "required": true,
+      "type": "int"
+    },
+    "Start Date": {
+      "required": true,
+      "type": "date"
+    },
+    "End Date": {
+      "required": true,
+      "type": "date"
+    },
+    "Due Date": {
+      "required": true,
+      "type": "date"
+    },
+    "Printout Type": {
+      "required": true,
+      "type": "text"
+    }
+  },
+  "required_fields": [
+    "School Year",
+    "Program Type",
+    "Grading Period Type",
+    "Order",
+    "Start Date",
+    "End Date",
+    "Due Date",
+    "Printout Type"
+  ],
+  "unique_fields": [],
+  "rules_enabled": {
+    "required_fields": true,
+    "unique_fields": true,
+    "acceptable_values_check": true,
+    "student_id_check": true,
+    "contacts_bday_format_check": true,
+    "contacts_student_email_check": true,
+    "contacts_comments_len_check": true,
+    "contacts_combo_id_check": true,
+    "contacts_combo_id_integrity_check": true
+  }
+}

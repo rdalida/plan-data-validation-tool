@@ -1,0 +1,26 @@
+{
+  "column_mapping": {
+    "District ID": {
+      "required": false,
+      "type": "text"
+    },
+    "Student ID": {
+      "required": false,
+      "type": "text"
+    },
+    "Date of Event": {
+      "required": false,
+      "type": "date"
+    },
+    "File Name": {
+      "required": false,
+      "type": "text"
+    }
+  },
+  "required_fields": [],
+  "unique_fields": [],
+  "rules_enabled": {
+    "required_fields": true,
+    "unique_fields": true
+  }
+}

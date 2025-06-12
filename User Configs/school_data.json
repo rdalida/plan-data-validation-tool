@@ -1,0 +1,41 @@
+{
+  "column_mapping": {
+    "School ID": {
+      "required": true,
+      "type": "text"
+    },
+    "School Name": {
+      "required": true,
+      "type": "text"
+    },
+    "School Type": {
+      "required": false,
+      "type": "text"
+    },
+    "Phone Number": {
+      "required": false,
+      "type": "text"
+    },
+    "Address": {
+      "required": false,
+      "type": "text"
+    },
+    "City": {
+      "required": false,
+      "type": "text"
+    },
+    "Zip Code": {
+      "required": false,
+      "type": "text"
+    }
+  },
+  "required_fields": [
+    "School ID",
+    "School Name"
+  ],
+  "unique_fields": [],
+  "rules_enabled": {
+    "required_fields": true,
+    "unique_fields": true
+  }
+}

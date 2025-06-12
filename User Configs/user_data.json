@@ -1,0 +1,60 @@
+{
+  "column_mapping": {
+    "Employee ID": {
+      "required": true,
+      "type": "text"
+    },
+    "User First Name": {
+      "required": true,
+      "type": "text"
+    },
+    "User Last Name": {
+      "required": true,
+      "type": "text"
+    },
+    "User Email Address": {
+      "required": true,
+      "type": "text"
+    },
+    "Phone Number": {
+      "required": false,
+      "type": "text"
+    },
+    "Title": {
+      "required": false,
+      "type": "text"
+    },
+    "User Type": {
+      "required": true,
+      "type": "text"
+    },
+    "Plan Role Name": {
+      "required": true,
+      "type": "text"
+    },
+    "Provider Type": {
+      "required": false,
+      "type": "text"
+    },
+    "School ID": {
+      "required": false,
+      "type": "text"
+    }
+  },
+  "required_fields": [
+    "Employee ID",
+    "User First Name",
+    "User Last Name",
+    "User Email Address",
+    "User Type",
+    "Plan Role Name"
+  ],
+  "unique_fields": [],
+  "rules_enabled": {
+    "required_fields": true,
+    "student_id_check": true,
+    "unique_fields": true,
+    "alert_id_prefix_check": true,
+    "alert_type_text_check": true
+  }
+}

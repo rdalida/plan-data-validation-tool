@@ -1,0 +1,13 @@
+[
+  {
+    "description": "Create Plan data validation tool",
+    "tags": [
+      "okr",
+      "plan"
+    ],
+    "priority": "P1",
+    "due_in_days": 7,
+    "due_str": "7d",
+    "created": "2025-06-12T12:50:47.561778"
+  }
+]

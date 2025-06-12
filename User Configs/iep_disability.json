@@ -1,45 +1,51 @@
 {
   "column_mapping": {
-    "Source ID": {
+    "Local Student ID": {
       "required": true,
       "type": "text"
     },
-    "Teacher Last Name": {
+    "Impairment Category": {
       "required": true,
       "type": "text"
     },
-    "Teacher First Name": {
+    "Student Is Eligible": {
       "required": true,
       "type": "text"
     },
-    "Teacher Middle Name": {
+    "Exceptional Student Placement Status": {
       "required": false,
       "type": "text"
     },
-    "Teacher Type": {
+    "Priority": {
       "required": true,
       "type": "text"
     },
-    "Start Date": {
+    "Consent Date": {
       "required": true,
       "type": "date"
     },
-    "End Date": {
+    "Evaluation Date": {
       "required": true,
       "type": "date"
     },
-    "Faculty ID": {
-      "required": false,
-      "type": "text"
+    "Eligibility Date": {
+      "required": true,
+      "type": "date"
+    },
+    "Placement Date": {
+      "required": true,
+      "type": "date"
     }
   },
   "required_fields": [
-    "Source ID",
-    "Teacher Last Name",
-    "Teacher First Name",
-    "Teacher Type",
-    "Start Date",
-    "End Date"
+    "Local Student ID",
+    "Impairment Category",
+    "Student Is Eligible",
+    "Priority",
+    "Consent Date",
+    "Evaluation Date",
+    "Eligibility Date",
+    "Placement Date"
   ],
   "unique_fields": [],
   "rules_enabled": {

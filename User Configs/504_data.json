@@ -1,0 +1,46 @@
+{
+  "column_mapping": {
+    "Local Student ID": {
+      "required": true,
+      "type": "text"
+    },
+    "Start Date of Plan": {
+      "required": true,
+      "type": "date"
+    },
+    "End Date of Plan": {
+      "required": true,
+      "type": "date"
+    },
+    "Date of Last Evaluation": {
+      "required": true,
+      "type": "date"
+    },
+    "Date of Next Evaluation": {
+      "required": true,
+      "type": "date"
+    },
+    "Last Annual Meeting Date": {
+      "required": true,
+      "type": "date"
+    },
+    "Student Program Status": {
+      "required": true,
+      "type": "text"
+    }
+  },
+  "required_fields": [
+    "Local Student ID",
+    "Start Date of Plan",
+    "End Date of Plan",
+    "Date of Last Evaluation",
+    "Date of Next Evaluation",
+    "Last Annual Meeting Date",
+    "Student Program Status"
+  ],
+  "unique_fields": [],
+  "rules_enabled": {
+    "required_fields": true,
+    "unique_fields": true
+  }
+}

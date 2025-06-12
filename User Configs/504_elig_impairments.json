@@ -1,27 +1,20 @@
 {
   "column_mapping": {
-    "Source ID": {
+    "Local Student ID": {
       "required": true,
       "type": "text"
     },
-    "Student ID": {
-      "required": true,
+    "Exceptionality": {
+      "required": false,
       "type": "text"
     },
-    "Start Date": {
-      "required": true,
-      "type": "date"
-    },
-    "End Date": {
-      "required": true,
-      "type": "date"
+    "Exceptional Student Placement Status": {
+      "required": false,
+      "type": "text"
     }
   },
   "required_fields": [
-    "Source ID",
-    "Student ID",
-    "Start Date",
-    "End Date"
+    "Local Student ID"
   ],
   "unique_fields": [],
   "rules_enabled": {

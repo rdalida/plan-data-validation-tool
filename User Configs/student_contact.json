@@ -1,0 +1,95 @@
+{
+  "column_mapping": {
+    "Local Student ID": {
+      "required": true,
+      "type": "text"
+    },
+    "Contact ID": {
+      "required": true,
+      "type": "text"
+    },
+    "Contact Order": {
+      "required": false,
+      "type": "text"
+    },
+    "Contact First Name": {
+      "required": true,
+      "type": "text"
+    },
+    "Contact Last Name": {
+      "required": true,
+      "type": "text"
+    },
+    "Contact Middle Name": {
+      "required": false,
+      "type": "text"
+    },
+    "Relationship": {
+      "required": true,
+      "type": "text"
+    },
+    "Address": {
+      "required": false,
+      "type": "text"
+    },
+    "Address 2": {
+      "required": false,
+      "type": "text"
+    },
+    "City": {
+      "required": false,
+      "type": "text"
+    },
+    "State": {
+      "required": false,
+      "type": "text"
+    },
+    "Zip": {
+      "required": false,
+      "type": "text"
+    },
+    "Status": {
+      "required": false,
+      "type": "text"
+    },
+    "Home Phone": {
+      "required": false,
+      "type": "text"
+    },
+    "Mobile Phone": {
+      "required": false,
+      "type": "text"
+    },
+    "Work Phone": {
+      "required": false,
+      "type": "text"
+    },
+    "Email": {
+      "required": false,
+      "type": "text"
+    },
+    "Legal Guardian": {
+      "required": false,
+      "type": "text"
+    },
+    "Lives With Student": {
+      "required": false,
+      "type": "text"
+    }
+  },
+  "required_fields": [
+    "Local Student ID",
+    "Contact ID",
+    "Contact First Name",
+    "Contact Last Name",
+    "Relationship"
+  ],
+  "unique_fields": [],
+  "rules_enabled": {
+    "required_fields": true,
+    "unique_fields": true,
+    "acceptable_values_check": true,
+    "dose_date_check": true,
+    "student_id_check": true
+  }
+}
