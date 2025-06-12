@@ -6,7 +6,7 @@ from .contacts_validator import validate_contacts
 from .class_validator import validate_class
 from .class_roster_validator import validate_class_roster
 from .class_teacher_validator import validate_class_teacher
-from .student_immunization_validator import validate_student_immunization
+from .school_year_validator import validate_school_year
 
 
 def dispatch_validation(role, df, config, cross_data=None):
@@ -26,7 +26,7 @@ def dispatch_validation(role, df, config, cross_data=None):
         return validate_class_roster(df, config, cross_data)
     elif role == "class_teacher":
         return validate_class_teacher(df, config, cross_data)
-    elif role == "student_immunization":
-        return validate_student_immunization(df, config, cross_data)
+    elif role == "school_year": # update 1
+        return validate_school_year(df, config, cross_data)
     else:
         return validate_data(df, config)
