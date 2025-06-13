@@ -7,6 +7,7 @@ from .iep_validator import validate_iep
 from .progress_reporting_dates_validator import validate_progress_reporting_dates
 from .class_teacher_validator import validate_class_teacher
 from .school_year_validator import validate_school_year
+from .iep_lre_validator import validate_iep_lre
 
 
 def dispatch_validation(role, df, config, cross_data=None):
@@ -28,5 +29,7 @@ def dispatch_validation(role, df, config, cross_data=None):
         return validate_class_teacher(df, config, cross_data)
     elif role == "school_year": # update 1
         return validate_school_year(df, config, cross_data)
+    elif role == "iep_lre_minutes": # update 8
+        return validate_iep_lre(df, config, cross_data)
     else:
         return validate_data(df, config)

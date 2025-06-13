@@ -72,8 +72,6 @@
   "unique_fields": [],
   "rules_enabled": {
     "required_fields": true,
-    "unique_fields": true,
-    "school_id_check": true,
-    "class_combo_id_check": true
+    "school_id_check": true
   }
 }
