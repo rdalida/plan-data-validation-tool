@@ -26,11 +26,11 @@
     },
     "Birthdate": {
       "required": true,
-      "type": "text"
+      "type": "date"
     },
     "Sex": {
       "required": true,
-      "type": "date"
+      "type": "text"
     },
     "School ID": {
       "required": true,
@@ -99,18 +99,15 @@
     "Grade",
     "Status"
   ],
-  "unique_fields": [],
+  "unique_fields": [
+    "Local Student ID"
+  ],
   "rules_enabled": {
     "required_fields": true,
+    "unique_fields": true,
+    "date_format_check": true,
     "acceptable_values_check": true,
-    "duplicate_records_check": true,
-    "alert_never_expires_check": true,
-    "alert_start_date_check": true,
-    "student_id_not_faculty_contact_check": true,
     "school_id_check": true,
-    "student_email_not_faculty_contact_check": true,
-    "duplicate_med_id_check": true,
-    "general_alert_no_html_check": true,
-    "postal_code_format_check": true
+    "zip_code_format_check": true
   }
 }

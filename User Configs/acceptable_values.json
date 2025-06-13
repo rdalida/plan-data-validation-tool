@@ -108,11 +108,11 @@
             "Transferred",
             "Withdrawn"
         ],
-        "EB/EL_STATUS": [
+        "EB_EL_STATUS": [
             "EL - 0 - Non-Emergent (Non-EB)/Non-English Learner (Non-EL)",
             "EL - 1 - Identified as Emergent Bilingual (EB)/ English learner (EL)",
             "EL - 3 - Student Reclassified from Emergent Bilingual (EB)/English learner Status (EL) - Monitored (M3)",
-            "EL - 4 -\u00a0 Student Reclassified from Emergent Bilingual (EB)/English learner Status (EL) - Monitored (M4)",
+            "EL - 4 - Student Reclassified from Emergent Bilingual (EB)/English learner Status (EL) - Monitored (M4)",
             "EL - 5 - Former Emergent Bilingual (EB)/EL Student (effective after 4th year of monitoring)",
             "EL - F - Student Reclassified from Emergent Bilingual (EB)/English learner Status (EL) - Monitored (M1)",
             "EL - S - Student Reclassified from Emergent Bilingual (EB)/English learner Status (EL) - Monitored (M2)"

@@ -40,7 +40,8 @@ READABLE_RULE_LABELS = {
     "date_order_check": "Start date must come before end date",
     "acceptable_values_check" : "Values must be in the acceptable values list",
     "zip_code_format_check": "Zip Code must be 5 digits or ZIP+4 format",
-    "phone_number_format_check": "Phone number must be 10 digits"
+    "phone_number_format_check": "Phone number must be 10 digits",
+    "school_id_check": "School ID must exist in School Data",
 }
 
 class ConfigManagerApp(ctk.CTk):
