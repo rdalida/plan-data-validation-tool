@@ -128,10 +128,21 @@
     },
     "SCHOOLS": {
         "SCHOOL_TYPE": [
-            "Male",
-            "Female",
-            "Unknown",
-            "Test Gender"
+            "Charter",
+            "Preschool",
+            "Elementary",
+            "Middle",
+            "High",
+            "Alternative",
+            "Early Childhood",
+            "Public School",
+            "Public Separate School",
+            "Private School",
+            "Nonpublic School",
+            "Public Residential Facility",
+            "Private Residential Facility",
+            "Correctional Facility",
+            "Jr. High Intermediate"
         ]
     },
     "STUDENT_CONTACT": {

@@ -37,7 +37,7 @@ def validate_schools(df, config, cross_data=None):
     # 📌 Rule #3. Acceptable Values
     if rules.get("acceptable_values_check", True):
         enum_checks = [
-            ("Schools", school_type_values, False),
+            ("School Type", school_type_values, False),
         ]
 
         normalized_valid_values_dict = {

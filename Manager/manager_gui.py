@@ -37,7 +37,10 @@ READABLE_RULE_LABELS = {
     "date_format_check": "Date fields format must be MM/DD/YYYY",
     "school_year_difference_check": "School Year must span exactly 1 year",
     "school_year_suffix_check": "Date pairs must be 1 year apart",
-    "date_order_check": "Start date must come before end date"
+    "date_order_check": "Start date must come before end date",
+    "acceptable_values_check" : "Values must be in the acceptable values list",
+    "zip_code_format_check": "Zip Code must be 5 digits or ZIP+4 format",
+    "phone_number_format_check": "Phone number must be 10 digits"
 }
 
 class ConfigManagerApp(ctk.CTk):

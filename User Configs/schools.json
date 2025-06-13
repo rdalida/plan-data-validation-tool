@@ -33,9 +33,14 @@
     "School ID",
     "School Name"
   ],
-  "unique_fields": [],
+  "unique_fields": [
+    "School ID"
+  ],
   "rules_enabled": {
     "required_fields": true,
-    "unique_fields": true
+    "unique_fields": true,
+    "acceptable_values_check": true,
+    "zip_code_format_check": true,
+    "phone_number_format_check": true
   }
 }
