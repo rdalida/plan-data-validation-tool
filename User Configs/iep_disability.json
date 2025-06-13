@@ -51,7 +51,8 @@
   "rules_enabled": {
     "required_fields": true,
     "unique_fields": false,
-    "source_id_class_check": true,
-    "class_teacher_name_faculty_check": true
+    "student_id_check": true,
+    "date_format_check": true,
+    "acceptable_values_check": true
   }
 }

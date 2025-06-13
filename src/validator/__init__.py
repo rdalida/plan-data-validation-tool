@@ -5,7 +5,7 @@ from .user_validator import validate_user
 from .student_contacts_validator import validate_contacts
 from .iep_validator import validate_iep
 from .progress_reporting_dates_validator import validate_progress_reporting_dates
-from .class_teacher_validator import validate_class_teacher
+from .iep_disability_validator import validate_iep_disability
 from .school_year_validator import validate_school_year
 from .iep_lre_validator import validate_iep_lre
 
@@ -25,8 +25,8 @@ def dispatch_validation(role, df, config, cross_data=None):
         return validate_iep(df, config, cross_data)
     elif role == "progress_reporting_dates": # update 7
         return validate_progress_reporting_dates(df, config, cross_data)
-    elif role == "class_teacher":
-        return validate_class_teacher(df, config, cross_data)
+    elif role == "iep_disability": # update 9
+        return validate_iep_disability(df, config, cross_data)
     elif role == "school_year": # update 1
         return validate_school_year(df, config, cross_data)
     elif role == "iep_lre_minutes": # update 8

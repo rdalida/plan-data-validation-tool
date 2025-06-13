@@ -296,7 +296,7 @@
         ]
     },
     "IEP_DISABILITY": {
-        "IMPAIRMENT": [
+        "IMPAIRMENT_CATEGORY": [
             "Autism",
             "Deaf-Blind",
             "Deaf or Hard of Hearing",
