@@ -45,7 +45,8 @@ READABLE_RULE_LABELS = {
     "email_format_check": "Email must be valid",
     "employee_planrole_provider_unique_check": "Combo ID (Employee ID, Plan Role Name, Provider Type) must be unique",
     "multi_school_id_check": "School ID if not null must exist in School file",
-    "provider_type_required_check": 'If User Type is "Provider", then Provider Type is required'
+    "provider_type_required_check": 'If User Type is "Provider", then Provider Type is required',
+    "plan_date_order_check": "Date must be after Start Date of Plan"
 }
 
 class ConfigManagerApp(ctk.CTk):

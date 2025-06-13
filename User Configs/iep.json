@@ -32,7 +32,7 @@
   "rules_enabled": {
     "required_fields": true,
     "unique_fields": true,
-    "school_id_check": true,
-    "acceptable_values_check": true
+    "date_format_check": true,
+    "plan_date_order_check": true
   }
 }
