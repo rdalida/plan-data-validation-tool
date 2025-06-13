@@ -42,6 +42,7 @@ READABLE_RULE_LABELS = {
     "zip_code_format_check": "Zip Code must be 5 digits or ZIP+4 format",
     "phone_number_format_check": "Phone number must be 10 digits",
     "school_id_check": "School ID must exist in School Data",
+    "email_format_check": "Email must be valid"
 }
 
 class ConfigManagerApp(ctk.CTk):

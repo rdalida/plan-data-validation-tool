@@ -36,7 +36,7 @@ def save_cached_mappings(cache):
         json.dump(cache, f, indent=2)
 
 EXPECTED_ROLES = [
-    "School_Year", "Schools", "Students", "Faculty", "Class",
+    "School_Year", "Schools", "Students", "Student_Contact", "Class",
     "Class_Teacher", "Class_Roster", "Student_Immunization", "Medical_Alerts"
 ]
 
@@ -416,7 +416,7 @@ class SHMValidationApp(ctk.CTk):
 
         # ✅ Sort roles by dependency priority
         PRIORITY_ORDER = [
-            "school_year", "schools", "faculty", "contacts",
+            "school_year", "schools", "faculty", "student_contact",
             "class", "class_teacher", "class_roster",
             "medical_alerts", "student_immunization"
         ]

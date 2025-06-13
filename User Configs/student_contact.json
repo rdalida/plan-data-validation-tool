@@ -84,12 +84,16 @@
     "Contact Last Name",
     "Relationship"
   ],
-  "unique_fields": [],
+  "unique_fields": [
+    "Contact ID"
+  ],
   "rules_enabled": {
     "required_fields": true,
     "unique_fields": true,
-    "acceptable_values_check": true,
-    "dose_date_check": true,
-    "student_id_check": true
+    "student_id_check": true,
+    "phonue_number_format_check": true,
+    "email_format_check": true,
+    "zip_code_format_check": true,
+    "acceptable_values_check": true
   }
 }

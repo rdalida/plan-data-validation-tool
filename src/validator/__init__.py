@@ -2,7 +2,7 @@ from .base_validator import validate_data
 from .students_validator import validate_students
 from .schools_validator import validate_schools
 from .faculty_validator import validate_faculty
-from .contacts_validator import validate_contacts
+from .student_contacts_validator import validate_contacts
 from .class_validator import validate_class
 from .class_roster_validator import validate_class_roster
 from .class_teacher_validator import validate_class_teacher
@@ -12,13 +12,13 @@ from .school_year_validator import validate_school_year
 def dispatch_validation(role, df, config, cross_data=None):
     role = role.lower()
 
-    if role == "students":
+    if role == "students":  # update 3
         return validate_students(df, config, cross_data)
-    elif role == "schools":
+    elif role == "schools": # update 2
         return validate_schools(df, config, cross_data)
     elif role == "faculty":
         return validate_faculty(df, config, cross_data)
-    elif role == "contacts":
+    elif role == "student_contact": # update 4
         return validate_contacts(df, config, cross_data)
     elif role == "class":
         return validate_class(df, config, cross_data)
