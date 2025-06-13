@@ -178,13 +178,13 @@
             "Student"
         ]
     },
-    "USERS": {
+    "USER": {
         "USER_TYPE": [
             "Administrator",
             "Provider",
             "Education Team"
         ],
-        "PLAN_ROLES": [
+        "PLAN_ROLE": [
             "District Super Admin",
             "District Admin",
             "Evaluation Coordinator",
@@ -220,7 +220,7 @@
             "ITC Administrator",
             "ITC View Only"
         ],
-        "PROVIDER_TYPES": [
+        "PROVIDER_TYPE": [
             "504 Specialist",
             "Adapted Equipment Technician",
             "Adapted Physical Education Teacher",

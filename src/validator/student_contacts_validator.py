@@ -48,7 +48,7 @@ def validate_contacts(df, config, cross_data=None):
 
     # 📌 Rule #4: Phone fields if not null must contain exactly 10 digits
     if rules.get("phone_number_format_check", True):
-        phone_fields = ["Home Phone", "Mobile Phone", "Work Phone"]
+        phone_fields = ["Phone Number"]
 
         for col in phone_fields:
             if col in df.columns:

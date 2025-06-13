@@ -42,7 +42,10 @@ READABLE_RULE_LABELS = {
     "zip_code_format_check": "Zip Code must be 5 digits or ZIP+4 format",
     "phone_number_format_check": "Phone number must be 10 digits",
     "school_id_check": "School ID must exist in School Data",
-    "email_format_check": "Email must be valid"
+    "email_format_check": "Email must be valid",
+    "employee_planrole_provider_unique_check": "Combo ID (Employee ID, Plan Role Name, Provider Type) must be unique",
+    "multi_school_id_check": "School ID if not null must exist in School file",
+    "provider_type_required_check": 'If User Type is "Provider", then Provider Type is required'
 }
 
 class ConfigManagerApp(ctk.CTk):

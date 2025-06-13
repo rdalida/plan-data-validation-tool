@@ -52,9 +52,12 @@
   "unique_fields": [],
   "rules_enabled": {
     "required_fields": true,
-    "student_id_check": true,
-    "unique_fields": true,
-    "alert_id_prefix_check": true,
-    "alert_type_text_check": true
+    "unique_fields": false,
+    "acceptable_values_check": true,
+    "email_format_check": true,
+    "employee_planrole_provider_unique_check": true,
+    "multi_school_id_check": true,
+    "phone_number_format_check": true,
+    "provider_type_required_check": true
   }
 }
