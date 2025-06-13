@@ -46,7 +46,10 @@ READABLE_RULE_LABELS = {
     "employee_planrole_provider_unique_check": "Combo ID (Employee ID, Plan Role Name, Provider Type) must be unique",
     "multi_school_id_check": "School ID if not null must exist in School file",
     "provider_type_required_check": 'If User Type is "Provider", then Provider Type is required',
-    "plan_date_order_check": "Date must be after Start Date of Plan"
+    "plan_date_order_check": "Date must be after Start Date of Plan",
+    "grading_period_count_check": "Grading Periods must match the number of Grading Period Types",
+    "end_after_start_check": "End Date must be after Start Date",
+    "due_after_end_check": "Due Date must be on or after End Date"
 }
 
 class ConfigManagerApp(ctk.CTk):

@@ -46,13 +46,11 @@
   "unique_fields": [],
   "rules_enabled": {
     "required_fields": true,
-    "unique_fields": true,
-    "acceptable_values_check": true,
-    "student_id_check": true,
-    "contacts_bday_format_check": true,
-    "contacts_student_email_check": true,
-    "contacts_comments_len_check": true,
-    "contacts_combo_id_check": true,
-    "contacts_combo_id_integrity_check": true
+    "school_year_format_check": true,
+    "grading_period_count_check": true,
+    "date_format_check": true,
+    "end_after_start_check": true,
+    "due_after_end_check": true,
+    "acceptable_values_check": true
   }
 }

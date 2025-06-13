@@ -281,7 +281,7 @@
         ]
     },
     "PROGRESS_REPORTING_DATES": {
-        "PROGRAM_TYPES": [
+        "PROGRAM_TYPE": [
             "IEP",
             "504"
         ],
