@@ -20,5 +20,16 @@
     "due_in_days": 7,
     "due_str": "7d",
     "created": "2025-06-13T11:26:24.101577"
+  },
+  {
+    "description": "Check print statements in each validator to match function name",
+    "tags": [
+      "okr",
+      "plan"
+    ],
+    "priority": "P2",
+    "due_in_days": 7,
+    "due_str": "7d",
+    "created": "2025-06-13T12:58:47.387471"
   }
 ]

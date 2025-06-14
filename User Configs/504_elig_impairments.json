@@ -20,8 +20,7 @@
   "rules_enabled": {
     "required_fields": true,
     "unique_fields": false,
-    "source_id_class_check": true,
     "student_id_check": true,
-    "class_roster_source_id_class_teacher_check": true
+    "acceptable_values_check": true
   }
 }

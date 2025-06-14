@@ -337,7 +337,7 @@
             "No Consent For Evaluation"
         ]
     },
-    "504_ELIG_IMPAIRMENT": {
+    "504_ELIG_IMPAIRMENTS": {
         "EXCEPTIONALITY": [
             "Alcoholism",
             "Allergies",
@@ -409,7 +409,7 @@
             "Visual Conditions",
             "Visually Impaired"
         ],
-        "EXCEPTIONAL_STUDENT_PLACEMENT_STATUS": [
+        "EXCEPTIONAL_STUDENT_PLACEMENT": [
             "Not Section 504 Eligible",
             "Section 504 Eligible + Plan",
             "Section 504 Eligible + Plan + Dyslexia Services",

@@ -37,7 +37,7 @@ def save_cached_mappings(cache):
 
 EXPECTED_ROLES = [
     "School_Year", "Schools", "Students", "Student_Contact", "User", "IEP",
-    "Progress_Reporting_Dates", "IEP_LRE_Minutes", "IEP_Disability", "Student_Immunization", "Medical_Alerts"
+    "Progress_Reporting_Dates", "IEP_LRE_Minutes", "IEP_Disability", "504_Elig_Impairments"
 ]
 
 class SHMValidationApp(ctk.CTk):
@@ -418,7 +418,7 @@ class SHMValidationApp(ctk.CTk):
         PRIORITY_ORDER = [
             "school_year", "schools", "students", "student_contact",
             "user", "iep", "progress_reporting_dates", "iep_lre_minutes", "iep_disability",
-            "medical_alerts", "student_immunization"
+            "504_elig_impairments"
         ]
         self.mapped_roles.sort(
             key=lambda r: PRIORITY_ORDER.index(r.lower()) if r.lower() in PRIORITY_ORDER else 999
